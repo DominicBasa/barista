@@ -12,6 +12,29 @@ public class TestOrders {
     Order order4 = new Order("Nicole"); 
     Order order5 = new Order("Sadie"); 
 
+    order1.addItem(item4);
+    order1.addItem(item4); 
+
+    order2.addItem(item1);
+    order2.addItem(item2);
+
+    order3.addItem(item4);
+    order3.addItem(item3);
+
+    order4.addItem(item2);
+    order4.addItem(item3);
+
+    order5.addItem(item1);
+    order5.addItem(item3);
+    order5.addItem(item3);
+
+    System.out.println(order5.getStatusMessage());
+    order5.setReady(true);
+    System.out.println(order5.getStatusMessage());
+
+    System.out.println(order5.getOrderTotal());
+    order5.display();
+
 
   }
 }
